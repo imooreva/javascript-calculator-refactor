@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript Calculator</title>
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+	<body>
+		<div id="main">
+			<p id="toplabel"><b>Plain JS/CSS Calculator</b></p>
+			<div id="result">0</div>
+			<button class="btn" value="AC" onclick="getKey(this.value)">AC</button>
+			<button class="btn" value="CE" onclick="getKey(this.value)">CE</button>
+			<!--Using the value of pi instead of adding several lines of JS for handling Math.PI-->
+			<button class="btn" value="3.141592653589793" onclick="getKey(this.value)">PI</button>
+			<button class="btn" value="/" onclick="getKey(this.value)">&divide;</button>
+			<button class="btn" value="7" onclick="getKey(this.value)">7</button>
+			<button class="btn" value="8" onclick="getKey(this.value)">8</button>
+			<button class="btn" value="9" onclick="getKey(this.value)">9</button>
+			<button class="btn" value="*" onclick="getKey(this.value)">&times;</button>
+			<button class="btn" value="4" onclick="getKey(this.value)">4</button>
+			<button class="btn" value="5" onclick="getKey(this.value)">5</button>
+			<button class="btn" value="6" onclick="getKey(this.value)">6</button>
+			<button class="btn" value="-" onclick="getKey(this.value)">-</button>
+			<button class="btn" value="1" onclick="getKey(this.value)">1</button>
+			<button class="btn" value="2" onclick="getKey(this.value)">2</button>
+			<button class="btn" value="3" onclick="getKey(this.value)">3</button>
+			<button class="btn" value="+" onclick="getKey(this.value)">+</button>
+			<button class="btn" value="0" onclick="getKey(this.value)">0</button>
+			<button class="btn" value="." onclick="getKey(this.value)">.</button>
+			<button class="btn" value="Ans" onclick="getKey(this.value)">Ans</button>
+			<button class="btn" value="equals" onclick="getKey(this.value)">=</button>
+		</div>
+        <script src="js/script.js"></script>
+	</body>
+</html>
