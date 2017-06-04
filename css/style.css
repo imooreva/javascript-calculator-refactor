@@ -12,10 +12,12 @@ body {
 }
 
 #gitlink>a {
-    bottom: 10%;
+    left: 0;
+    bottom: 0;
     color: #CCCC00;
-    font-size: 0.875rem;
-    line-height: 1.5rem;
+    font-size: 1.0rem;
+    padding: 0 0 0.5rem 0.5rem;
+    position: fixed;
     text-decoration: none;
 }
 
@@ -27,8 +29,9 @@ body {
 	background-color: #CCCC00;
     border: 0.0625rem #444444 solid;
 	border-radius: 0.625rem;
-	box-shadow: 0 0 1rem 0.625rem #FFFF99;
+	box-shadow: 0 0 1.0rem 0.625rem #FFFF99;
 	height: 23.75rem;
+    margin-bottom: 2.0rem;
 	padding-top: 0.3125rem;
 	text-align: center;
 	width: 18.75rem;    
