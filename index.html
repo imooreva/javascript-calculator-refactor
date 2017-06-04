@@ -9,31 +9,36 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
 	<body>
-		<div id="main">
-			<p id="toplabel"><b>Plain JS/CSS Calculator</b></p>
-			<div id="result">0</div>
-			<button class="btn" value="AC" onclick="getKey(this.value)">AC</button>
-			<button class="btn" value="CE" onclick="getKey(this.value)">CE</button>
-			<!--Using the value of pi instead of adding several lines of JS for handling Math.PI-->
-			<button class="btn" value="3.141592653589793" onclick="getKey(this.value)">PI</button>
-			<button class="btn" value="/" onclick="getKey(this.value)">&divide;</button>
-			<button class="btn" value="7" onclick="getKey(this.value)">7</button>
-			<button class="btn" value="8" onclick="getKey(this.value)">8</button>
-			<button class="btn" value="9" onclick="getKey(this.value)">9</button>
-			<button class="btn" value="*" onclick="getKey(this.value)">&times;</button>
-			<button class="btn" value="4" onclick="getKey(this.value)">4</button>
-			<button class="btn" value="5" onclick="getKey(this.value)">5</button>
-			<button class="btn" value="6" onclick="getKey(this.value)">6</button>
-			<button class="btn" value="-" onclick="getKey(this.value)">-</button>
-			<button class="btn" value="1" onclick="getKey(this.value)">1</button>
-			<button class="btn" value="2" onclick="getKey(this.value)">2</button>
-			<button class="btn" value="3" onclick="getKey(this.value)">3</button>
-			<button class="btn" value="+" onclick="getKey(this.value)">+</button>
-			<button class="btn" value="0" onclick="getKey(this.value)">0</button>
-			<button class="btn" value="." onclick="getKey(this.value)">.</button>
-			<button class="btn" value="Ans" onclick="getKey(this.value)">Ans</button>
-			<button class="btn" value="equals" onclick="getKey(this.value)">=</button>
+		<div id="container">
+            <div id="main">
+                <p id="toplabel"><b>JavaScript Calculator</b></p>
+                <div id="result">0</div>
+                <button class="btn" value="AC" tabindex="1">AC</button>
+                <button class="btn" value="CE" tabindex="2">&#8592;</button>
+                <button class="btn" value="3.141592653589793" tabindex="3">&#960;</button>
+                <button class="btn" value="/" tabindex="4">&divide;</button>
+                <button class="btn" value="7" tabindex="5">7</button>
+                <button class="btn" value="8" tabindex="6">8</button>
+                <button class="btn" value="9" tabindex="7">9</button>
+                <button class="btn" value="*" tabindex="8">&times;</button>
+                <button class="btn" value="4" tabindex="9">4</button>
+                <button class="btn" value="5" tabindex="10">5</button>
+                <button class="btn" value="6" tabindex="11">6</button>
+                <button class="btn" value="-" tabindex="12">-</button>
+                <button class="btn" value="1" tabindex="13">1</button>
+                <button class="btn" value="2" tabindex="14">2</button>
+                <button class="btn" value="3" tabindex="15">3</button>
+                <button class="btn" value="+" tabindex="16">+</button>
+                <button class="btn" value="0" tabindex="17">0</button>
+                <button class="btn" value="." tabindex="18">.</button>
+                <button class="btn" value="Ans" tabindex="19">Ans</button>
+                <button class="btn" value="equals" tabindex="20">=</button>
+            </div>
+            <p id="gitlink">
+                <a href="https://github.com/imooreva/javascript-calculator-refactor" target="_blank" tabindex="21">Github repo</a>
+            </p>
 		</div>
         <script src="js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.13.3/math.min.js"></script>
 	</body>
 </html>

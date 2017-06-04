@@ -1,33 +1,47 @@
 body {
 	background-color: #333300;
+    text-align: right;
 }
 
-#main {
-	-webkit-transform: scale(1);
-	transform: scale(1);
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: scale(1) translate(-50%, -50%);
+    transform: scale(1) translate(-50%, -50%);
+}
+
+#gitlink>a {
+    bottom: 10%;
+    color: #CCCC00;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+
+#gitlink>a:hover {
+    text-decoration: underline;
+}
+
+#main {	
 	background-color: #CCCC00;
+    border: 0.0625rem #444444 solid;
 	border-radius: 0.625rem;
 	box-shadow: 0 0 1rem 0.625rem #FFFF99;
 	height: 23.75rem;
-	margin: auto;
 	padding-top: 0.3125rem;
-	position: absolute;
 	text-align: center;
-	width: 18.75rem;
-	top: 0;	
-	right: 0;
-	bottom: 0;
-    left: 0;
+	width: 18.75rem;    
 }
 
 #result {
 	background-color: #FFFF99;
     border-radius: 0.3125rem;
+    box-shadow: 0 0 0.09375rem 0.09375rem #444444 inset;
 	color: #333300;
 	font-size: 1.375rem;
 	height: 3.125rem;
-	margin: auto;
-	margin-bottom: 0.75rem;
+	margin: 0 auto 0.75rem auto;
     overflow: hidden;
     padding: 0.1875rem 0.25rem;
     text-align: right;
@@ -37,12 +51,19 @@ body {
     word-wrap: break-word;
 }
 
+#toplabel {
+    color: #333300;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1.25rem;
+}
+
 .btn {
 	background-color: #FFFF80;
 	border: none;
 	border-radius: 0.3125rem;
+    box-shadow: 0.125rem 0.1rem 0.125rem 0.125rem #444444;
 	color: #333300;
-	font-family: "Comfortaa", sans-serif;
+	font-family: 'Comfortaa', sans-serif;
 	font-size: 1.25rem;
 	height: 2.5rem;
 	margin-right: 0.125rem;
@@ -55,50 +76,22 @@ body {
 	transform: translateX(1px) translateY(1px);
 }
 
-#toplabel {
-	color: #333300;
-	font-family: "Comfortaa", sans-serif;
-	font-size: 1.25rem;
+.btn:focus {
+    outline: #00ffff solid 0.09375rem;
 }
 
 /* Small devices */
-
 @media only screen and (min-width: 281px) and (max-width: 320px) {
-	#main {
-		-webkit-transform: scale(0.85);
-		transform: scale(0.85);
+	#container {
+        -webkit-transform: scale(0.85) translate(-50%, -50%);;
+        transform: scale(0.85) translate(-50%, -50%);;
 	}
 }
 
 /* ...and smaller devices */
-
 @media only screen and (max-width: 280px) {
-	#main {
-		-webkit-transform: scale(0.7);
-		transform: scale(0.7);
+	#container {
+        -webkit-transform: scale(0.7) translate(-50%, -50%);;
+        transform: scale(0.7) translate(-50%, -50%);;
 	}
 }
-
-
-/*
-	@media only screen and (max-width: 320px) {
-	#main {    
-	height: 342px;
-    width: 270px;
-	}
-	#result {
-    font-size: 1.25em;
-    margin-bottom: 6px;
-	height: 45px;
-    width: 225px;
-	}
-	.btn {    
-    font-size: 1.125em;
-    height: 36px;
-    width: 54px;
-	}
-	p {
-    font-size: 1.125em;
-	}
-	}
-*/
