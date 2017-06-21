@@ -1,5 +1,6 @@
 body {
 	background-color: #333300;
+    font-family: 'Comfortaa', sans-serif;
     text-align: right;
 }
 
@@ -56,7 +57,6 @@ body {
 
 #toplabel {
     color: #333300;
-    font-family: 'Comfortaa', sans-serif;
     font-size: 1.25rem;
 }
 
@@ -79,8 +79,8 @@ body {
 	transform: translateX(1px) translateY(1px);
 }
 
-.btn:focus {
-    outline: #00ffff solid 0.09375rem;
+.btn:focus, #gitlink:focus {
+    outline: 0.125rem solid #00ffff;
 }
 
 /* Small devices */
